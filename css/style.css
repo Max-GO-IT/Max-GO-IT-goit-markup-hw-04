@@ -82,8 +82,7 @@ img {
 .nav-item:last-child {
   margin-right: 0;
 }
-.nav-link-active::before {
-  position: absolute;
+.nav-link-active::after {
   display: block;
   content: "";
   width: 100%;

@@ -121,14 +121,18 @@ img {
 
 /*ХИРО*/
 .hero {
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: rgba(47, 48, 58, 0.4) url(../images/hero_image.jpg);
+  background-image: url(../images/hero_image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   text-align: center;

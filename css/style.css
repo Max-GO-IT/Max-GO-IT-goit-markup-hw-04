@@ -126,6 +126,11 @@ img {
 .contact-link:focus {
   color: var(--hover-color);
 }
+.envelope-smartphone {
+  width: 16px;
+  height: 12px;
+  fill: var(--secondary-text-color);
+}
 
 /*ХИРО*/
 .hero {

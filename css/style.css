@@ -3,6 +3,7 @@
   --secondary-text-color: #757575;
   --hover-color: #2196f3;
   --button-background-color: #f5f4fa;
+  --white-color: #ffffff;
 }
 body {
   background-color: #fff;
@@ -129,7 +130,7 @@ img {
 .envelope-smartphone {
   width: 16px;
   height: 12px;
-  vertical-align: middle;
+  margin-right: 10px;
   fill: var(--secondary-text-color);
 }
 .contact-link:hover .envelope-smartphone {
@@ -162,7 +163,7 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .hero-button {
   margin-top: 30px;
@@ -171,7 +172,7 @@ img {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  color: #ffffff;
+  color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -264,7 +265,7 @@ button:hover {
   justify-content: space-between;
 }
 .ourteam-item {
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -312,13 +313,13 @@ button:hover {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--secondary-text-color);
 }
 .social-icon-link:hover {
   background-color: var(--hover-color);
 }
 .social-icon-link:hover .social-icon {
-  fill: #ffffff;
+  fill: var(--white-color);
 }
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ*/
@@ -331,7 +332,7 @@ button:hover {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--secondary-text-color);
   border-radius: 4px;
   margin-top: 50px;
   margin-right: 30px;
@@ -339,7 +340,7 @@ button:hover {
 .our-clients-icon {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: var(--secondary-text-color);
 }
 .our-clients-item:hover,
 .our-clients-item:focus {
@@ -351,7 +352,12 @@ button:hover {
 }
 
 /*ФУТЕР*/
-
+.footer-container {
+  display: flex;
+}
+.footer-location {
+  display: block;
+}
 .studio {
   font-family: Raleway;
   font-weight: 700;
@@ -359,7 +365,7 @@ button:hover {
   line-height: 1.19em;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-section {
   padding-top: 60px;
@@ -383,7 +389,7 @@ button:hover {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-contact {
   font-style: normal;
@@ -400,6 +406,40 @@ button:hover {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--hover-color);
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-icon-link:hover {
+  background: var(--hover-color);
+}
+.footer-icon-link:hover .social-icon {
+  fill: var(--white-color);
 }
 
 /* СЕКЦИЯ КНОПОК В ПОРТФОЛИО */

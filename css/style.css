@@ -127,15 +127,25 @@ img {
 .contact-link:focus {
   color: var(--hover-color);
 }
-.envelope-smartphone {
+.envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: var(--secondary-text-color);
 }
-.contact-link:hover .envelope-smartphone {
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+.contact-link:hover .envelope {
   fill: var(--hover-color);
 }
+.contact-link:hover .smartphone {
+  fill: var(--hover-color);
+}
+
 /*ХИРО*/
 .hero {
   padding-top: 200px;

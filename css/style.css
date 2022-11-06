@@ -166,26 +166,26 @@ img {
 
 /*ХИРО*/
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center, no-repeat;
+  padding: 200px 0;
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      to right,
+  background-size: contain;
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+      rgba(47, 48, 58, 0.4)),
     url(../images/hero_image.jpg);
 }
+
 .hero-title {
+  width: 696px;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 900;
   font-size: 44px;
@@ -193,6 +193,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
+
 .hero-button {
   margin-top: 30px;
   background: #2196f3;
@@ -204,9 +205,15 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  border: none;
 }
+
 button:hover {
   cursor: pointer;
+}
+
+.hero-button:hover {
+  background: #188CE8;
 }
 
 /*ПРЕИМУЩЕСТВА*/
@@ -516,6 +523,11 @@ button:hover {
 }
 
 /* СЕКЦИЯ КНОПОК В ПОРТФОЛИО */
+ .portfolio {
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+}
 .portfolio-button {
   padding: 6px 22px;
 
@@ -603,6 +615,7 @@ portfolio-item:last-child {
   padding-bottom: 20px;
   padding-left: 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 .portfolio-text-wrapper {
   position: absolute;

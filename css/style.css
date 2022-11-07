@@ -137,30 +137,16 @@ img {
   height: 12px;
   margin-right: 10px;
   vertical-align: middle;
-  fill: var(--secondary-text-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill:currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   vertical-align: middle;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-link:hover .envelope {
-  fill: var(--hover-color);
-}
-.contact-link:focus .envelope {
-  fill: var(--hover-color);
-}
-
-.contact-link:hover .smartphone {
-  fill: var(--hover-color);
-}
-.contact-link:focus .smartphone {
-  fill: var(--hover-color);
 }
 
 /*ХИРО*/
@@ -375,10 +361,6 @@ button:hover {
   background-color: var(--hover-color);
   color: var(--white-color);
 }
-.social-icon-link:hover .social-icon,
-.social-icon-link:focus .social-icon {
-  fill: currentColor;
-}
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ*/
 .our-clients-list {
@@ -399,23 +381,19 @@ button:hover {
   height: 92px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
+  color: var(--icons-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--icons-color);
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-link:hover,
 .our-clients-link:focus {
   border: 1px solid var(--hover-color);
   color: var(--hover-color);
-}
-.our-clients-link:hover .our-clients-icon {
-  fill: var(--hover-color);
-}
-.our-clients-link:focus .our-clients-icon {
-  fill: var(--hover-color);
 }
 
 /*ФУТЕР*/

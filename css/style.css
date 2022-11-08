@@ -350,12 +350,13 @@ img {
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: var(--hover-color);
-  color: var(--white-color);
+  color:var(--white-color);
 }
 .social-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
